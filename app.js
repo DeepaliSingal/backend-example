@@ -5,7 +5,7 @@ import router from "./routes/user-routes.js";
 import cors from "cors";
 import path from "path";
 
-const url="mongodb://localhost/BlogApp";
+const url=process.env.DATABASE_URL;
 const app=express();
 
 app.use(express.json());
